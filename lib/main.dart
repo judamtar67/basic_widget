@@ -123,19 +123,124 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-            Row(crossAxisAlignment: CrossAxisAlignment.start, children: const [
-              Expanded(
-                flex: 10,
-                child: Text(
-                  '5 Trending Anime This Season',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                      color: Colors.red),
-                ),
-              )
-            ]),
+            SizedBox(
+              height: 50,
+              child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Expanded(
+                      flex: 10,
+                      child: Text(
+                        '5 Trending Anime This Season',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.red),
+                      ),
+                    )
+                  ]),
+            ),
+            Container(
+                color: Colors.yellow,
+                height: 380,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Image(
+                          image: NetworkImage(
+                              'https://cdn.myanimelist.net/images/anime/1111/127508.jpg')),
+                    ),
+                    Expanded(
+                        flex: 7,
+                        child: Text(
+                          '1.   SPY X FAMILY',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 21),
+                        ))
+                  ],
+                )),
+            Container(
+                color: Colors.yellow,
+                height: 380,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Image(
+                          image: NetworkImage(
+                              'https://cdn.myanimelist.net/images/anime/1806/126216.jpg')),
+                    ),
+                    Expanded(
+                        flex: 7,
+                        child: Text(
+                          '2.   Chainsaw Man',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 21),
+                        ))
+                  ],
+                )),
+            Container(
+                color: Colors.yellow,
+                height: 380,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Image(
+                          image: NetworkImage(
+                              'https://cdn.myanimelist.net/images/anime/1874/121869.jpg')),
+                    ),
+                    Expanded(
+                        flex: 7,
+                        child: Text(
+                          '3.   Eminence in Shadow',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 21),
+                        ))
+                  ],
+                )),
+            Container(
+                color: Colors.yellow,
+                height: 380,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Image(
+                          image: NetworkImage(
+                              'https://cdn.myanimelist.net/images/anime/1258/126929.jpg')),
+                    ),
+                    Expanded(
+                        flex: 7,
+                        child: Text(
+                          '4.   Blue Lock',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 21),
+                        ))
+                  ],
+                )),
+            Container(
+                color: Colors.yellow,
+                height: 380,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Image(
+                          image: NetworkImage(
+                              'https://cdn.myanimelist.net/images/anime/1764/126627.jpg')),
+                    ),
+                    Expanded(
+                        flex: 7,
+                        child: Text(
+                          '5.   Bleach: Thousand-Year Blood War',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 21),
+                        ))
+                  ],
+                )),
           ]),
     );
   }
